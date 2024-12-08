@@ -54,31 +54,37 @@ const breakpoints =ref({
 const testimonials=ref([
     {
         id:1,
-        fullName:'client 1',
+        fullName:'Ordant',
         image:'src/assets/image.png',
         comment:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima reprehenderit maiores itaque molestiae optio, voluptatibus iusto eos doloremque consectetur!'
     },
     {
         id:2,
-        fullName:'client 2',
+        fullName:'ParkSmart',
         image:'src/assets/image.png',
         comment:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima reprehenderit maiores itaque molestiae optio, voluptatibus iusto eos doloremque consectetur!'
     },
     {
         id:3,
-        fullName:'client 3',
+        fullName:'Scooy',
         image:'src/assets/image.png',
         comment:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima reprehenderit maiores itaque molestiae optio, voluptatibus iusto eos doloremque consectetur!'
     },
     {
         id:4,
-        fullName:'client 4',
+        fullName:'POS',
         image:'src/assets/image.png',
         comment:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima reprehenderit maiores itaque molestiae optio, voluptatibus iusto eos doloremque consectetur!'
     },
     {
         id:5,
-        fullName:'client 5',
+        fullName:'School Dash',
+        image:'src/assets/image.png',
+        comment:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima reprehenderit maiores itaque molestiae optio, voluptatibus iusto eos doloremque consectetur!'
+    },
+    {
+        id:6,
+        fullName:'Coughdrop',
         image:'src/assets/image.png',
         comment:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima reprehenderit maiores itaque molestiae optio, voluptatibus iusto eos doloremque consectetur!'
     },

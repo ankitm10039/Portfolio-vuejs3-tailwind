@@ -47,7 +47,8 @@
                         <div v-for="technology in project.technologies" :key="technology" class="text-center ml-1 mt-1 rounded-3xl bg-[#111827]"
                         style="box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); border: 1px solid #111827;backdrop-filter: blur(9px);-webkit-backdrop-filter: blur(9px);"
                         >
-                    <p class="px-1 py-2">{{ technology }}</p>
+                    <!-- <p class="px-1 py-2">{{ technology }}</p> -->
+                     <Button :label="technology" severity="warn" rounded/>
                     </div>
                     </div>
                 </div>
@@ -58,35 +59,36 @@
 </template>
 <script setup>
 import { ref, computed } from 'vue';
+import Button from 'primevue/button';
 
 const Projects = ref([
     {
         id: 1,
-        category: 'web development',
+        category: 'Web Application',
         image: 'src/assets/project.png',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
+        title: 'Ordant',
+        description: 'Our Next-Gen Cloud Based platform runs your entire print business from start to finish No more juggling between multiple software and retyping the same information. customizable modules work independently.',
+        technologies: ['HTML', 'CSS','vue.js 3', 'Pinia','Quasar','Axios','Javascript',],
         gitURL: '',
         webURL: ''
     },
     {
         id: 2,
-        category: 'Mobile App',
+        category: 'Web Application',
         image: 'src/assets/mobile.jpg',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
+        title: 'ParkSmart',
+        description: ' A parked domain is any domain name that is not linked to any unique website web service. Parked domains may not be linked to any page, or they could serve as an alias foranother, primary domain.',
+        technologies: ['HTML','CSS','Javascript','vue.js 3', 'Pinia','Quasar','Axios'],
         gitURL: '',
         webURL: ''
     },
     {
         id: 3,
-        category: 'web development',
+        category: 'Web Application',
         image: 'src/assets/project.png',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
+        title: 'Point of Sale (POS)',
+        description: 'A point-of-sale system used to refer to the cash register at a store. Today, modern POS systems are entirely digital, which means you can check out a customer wherever you are. All you need, such as a tablet or phone',
+        technologies: ['HTML', 'CSS','Javascript','vue.js 3', 'vuex', 'Tailwind Css', 'Quasar'],
         gitURL: '',
         webURL: ''
     },
@@ -94,9 +96,9 @@ const Projects = ref([
         id: 4,
         category: 'Mobile App',
         image: 'src/assets/mobile.jpg',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
+        title: 'School Dash',
+        description: 'School Management System With Schooldash you can automate the entire school using a single platform., fee-collection and academic analysis ‒ automate the infinite array of school processes and workflows in minutes with an all-in-one, 360 degree solution.',
+        technologies: ['vue.js 3', 'vuex', 'Vuetify', 'Axios', 'Java', "Javascript", 'HTML', 'CSS'],
         gitURL: '',
         webURL: ''
     },
@@ -104,9 +106,9 @@ const Projects = ref([
         id: 5,
         category: 'web development',
         image: 'src/assets/project.png',
-        title: 'project 1',
+        title: 'Scooy',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
+        technologies: ['vue.js 3', 'vuex', 'HTML', 'CSS','Javascript', 'PHP', 'Laravel', 'MySQL'],
         gitURL: '',
         webURL: ''
     },
@@ -114,9 +116,9 @@ const Projects = ref([
         id: 6,
         category: 'Mobile App',
         image: 'src/assets/mobile.jpg',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
+        title: 'Lyvup',
+        description: 'At Lyvup, we believe that accessible and affordable healthcare is crucial for a healthy society. Our mission is to provide innovative digital therapies that seamlessly align with the needs of individuals of all ages, socioeconomic statuses, languages',
+        technologies: ['HTML', 'CSS', 'Javascript', 'React js', 'Bootstrap', 'Node js', 'Axios',],
         gitURL: '',
         webURL: ''
     }

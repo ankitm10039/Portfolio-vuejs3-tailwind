@@ -3,11 +3,7 @@
         <h2 class="text-4xl font-bold text-white text-left mb-4 px-4 xl:pl-16">Let's Connect</h2>
         <div class="grid md:grid-cols-2 gap-4 relative px-4 xl:px-16 mt-8" data-aos="zoom-in-up">
             <div>
-                <p class="text-[#adb7be]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta alias
-                    quibusdam officia at,
-                    a quis cumque ea aperiam omnis minima quam. Modi necessitatibus odit corporis at dolorem quae iusto
-                    aliquam?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, porro!
+                <p class="text-[#adb7be]">To build responsive and visually appealing web applications that enhance user experience and meet client needs effectively. I am focused on mastering front-end and back-end technologies to create robust and secure web solutions
                 </p>
                 <div class="col-lg-4 col-md-4 mb-lg-0 mt-5">
                     <div class="flex mb-10 items-center">
@@ -18,7 +14,7 @@
                         </div>
                         <div class="ml-5 text-white">
                             <h4>Email</h4>
-                            <p>xxxxxxx@gmail.com</p>
+                            <p>ankitm.uidev@gmail.com</p>
                         </div>
                     </div>
                     <div class="flex mb-10 items-center">
@@ -29,7 +25,7 @@
                         </div>
                         <div class="ml-5 text-white">
                             <h4>Phone</h4>
-                            <p>+xxxxxxxxxx</p>
+                            <p>7674988775</p>
                         </div>
                     </div>
                     <div class="flex mb-10 items-center">
@@ -41,7 +37,7 @@
                         </div>
                         <div class="ml-5 text-white">
                             <h4>LinkedIn</h4>
-                            <p>wwww.LinkedIn.com</p>
+                            <p>https://www.linkedin.com/in/ankit-meena</p>
                         </div>
                     </div>
                 </div>
@@ -50,24 +46,28 @@
             style="background: #111a3e; width: 100%;height: 100%; border-radius: 20px;
             overflow: hidden;border: 1px solid #111a3e;backdrop-filter: blur(9px);-webkit-backdrop-filter: blur(9px);">
             <form class="flex flex-col p-2" data-aos="zoom-in-up" >
-                <div class="mb-6">
-                    <label for="email" class="text-white block mb-2 text-sm font-medium">email</label>
-                    <input type="email" id="email" class="bg-[#111827] placeholder:[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                    placeholder="email@gmail.com" name="email">
+                <div class="mb-6 mt-5">
+                    <FloatLabel>
+            <InputText id="username" type="email" v-model="value" class="input"/>
+            <label for="username">Email</label>
+        </FloatLabel>
+                   
                 </div>
-                <div class="mb-6">
-                    <label for="subject" class="text-white block mb-2 text-sm font-medium">Subject</label>
-                    <input type="subject" id="subject" class="bg-[#111827] placeholder:[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                    placeholder="subject" name="subject">
+                <div class="mb-6 mt-5">
+                    <FloatLabel>
+            <InputText id="username" type="text" v-model="value" class="input"/>
+            <label for="username">Subject</label>
+        </FloatLabel>
                 </div>
-                <div class="mb-6">
-                    <label for="message" class="text-white block mb-2 text-sm font-medium">Message</label>
-                    <textarea id="Message" class="bg-[#111827] placeholder:[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                    placeholder="Let's talk about ... " name="Message"></textarea>
+                <div class="mb-6 mt-5">
+                    <FloatLabel>
+                        <Textarea v-model="value" class="input" rows="5" cols="30" />
+            <label for="username">Message</label>
+        </FloatLabel>
+                    <!-- <label for="message" class="text-white block mb-2 text-sm font-medium">Message</label> -->
+                    
                 </div>
-                <button class="z-1 w-[100%!important] px-6 md:px-7 py-3 rounded-full sm:w-max flex justify-center text-white bg-primary border-2 border-transparent">
-                    Send Message
-                </button>
+                <Button label="Send Message" icon="pi pi-check" severity="warn"/>
             </form>
         </div>
         <div class="bg-gradient-to-tr opacity-25 from-[#570cac] to-primary blur-2xl h-20 w-80 z-0 absolute -top-1/2 -left-4 transform -translate-x-2/3 
@@ -76,6 +76,13 @@
         </div>
     </section>
 </template>
-<script>
+<script setup>
+
+import InputText from 'primevue/inputtext';
+import Button from 'primevue/button';
+import Textarea from 'primevue/textarea';
+
+import FloatLabel from 'primevue/floatlabel';
+
 
 </script>

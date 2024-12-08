@@ -28,24 +28,20 @@
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">About</span>
                     Me
                 </h2>
-                <p class="text-base lg:text-lg mt-8 py-8"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                     Qui facere libero cupiditate fugit minima voluptates numquam est eos voluptate saepe
-                      eius amet harum provident accusamus omnis sit in cum incidunt dolorum, necessitatibus 
-                      illo reiciendis ipsam debitis velit! Itaque officia architecto fugit, cum dolorum eos dolore 
-                      quaerat quis nobis id similique!
+                <p class="text-base lg:text-lg mt-8 py-8">  An enthusiastic & highly energetic Technical development high revenue generating products A result-oriented professional with 4+ years of experience in Software Development. Experienced in HTML5, CSS3, JavaScript, React Js, Vue Js, Quasar, Tailwind CSS, GIT, Jira, Bitbucket, Bootstrap, and Pinia Technologies. Depth understanding of Vue Js, Reac,t Js, and Quasar Framework of Software Development Lifecycle. | Software Development | UI Development | UI Design and Coding | Debugging & Testing | Troubleshooting | Scrum |
                 </p>
                 <div class="grid grid-cols-3 gap-4 max-w-lg pt-8">
                     <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+200</h3>
+                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">5+</h3>
                         <p class="text-sm sm:text-base text-gray-300">Happy Client</p>
                     </div>
                     <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+300</h3>
+                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">5+</h3>
                         <p class="text-sm sm:text-base text-gray-300">Project</p>
                     </div>
 
                     <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+7</h3>
+                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">4+</h3>
                         <p class="text-sm sm:text-base text-gray-300"> Years Experience</p>
                     </div>
                 </div>
@@ -55,18 +51,27 @@
 </template>
 <script setup>
 import { ref } from 'vue';
+import Badge from 'primevue/badge';
+import OverlayBadge from 'primevue/overlaybadge';
+
 const education=ref([
     {
         id:1,
-        School:'school 1',
-        program:'Software Engineer',
-        year:'2022'
+        School:'Genius Public High Sec School, Jaora,Madhya Pradesh',
+        program:'X',
+        year:'2016'
     },
     {
         id:2,
-        School:'school 2',
-        program:'Software Engineer',
-        year:'2020'
+        School:'Ankur Higher Seconday School, Dalouda,Madhya Pradesh',
+        program:'XII',
+        year:'2018'
+    },
+    {
+        id:3,
+        School:'Maharishi Mahesh Yogi Vedic Vishwavidyalaya, Jabalpur, Madhya Pradesh',
+        program:'BCA (Bachelor of omputer Application)',
+        year:'2022'
     }
 ])
 </script>
